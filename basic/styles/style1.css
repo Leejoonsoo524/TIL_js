@@ -1,0 +1,41 @@
+@charset "UTF-8";
+main {
+  width: 500px; /* 개별 */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  /* 공통 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* 공통속성과 같은 mixin -> include */
+  background-image: url(); /* 개별 속성값은 따로 적기 */
+}
+main h1 {
+  color: aqua;
+}
+main p {
+  color: #f00;
+}
+main p:hover {
+  color: #00f;
+}
+main .box {
+  background-color: #ff0;
+}
+main .box input:hover {
+  background-color: aqua;
+}
+main .box input[type=text] {
+  border: 1px solid black;
+}
+main .box span:nth-child(3) {
+  background-color: red;
+}
+main .box span {
+  background-color: #111;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style1.css.map */

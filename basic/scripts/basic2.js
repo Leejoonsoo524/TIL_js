@@ -185,7 +185,7 @@ console.log(a,b,c,d);
 */
 /********************************************************************************************/
 // 복합대입연산자
-let number = 10;
+/* let number = 10;
 number += 5;
 console.log(number);
 number *= 5;
@@ -193,10 +193,42 @@ console.log(number);
 number /= 2;
 console.log(number);
 number %= 2;
-console.log(number);
+console.log(number); */
 
+/********************************************************************************************/
+// 함수
+// 1. 내장함수
+//prompt('함수는?');
+//alert('함수는');
+//print();
+// 2. 사용자정의함수
+//function 함수명(인자){반복구문}
+// html, css, js 반복출력
+/*let lang1,lang2,lang3;
+function Study()        // 함수 대기 상태
+{
+    lang1 = 'html';
+    lang2 = 'css';
+    lang3 = 'javascript';
+    console.log(`배운언어 ${lang1+lang2+lang3}`);
+}
+Study();                // 함수 호출 상태
+console.log(lang1+lang2+lang3);*/
+// 함수는 생성(대기)과 호출을 별개로 취급한다.
 
+console.log('지역변수와 전역변수');
+let xx = 1;
+let yy;
+function func1()
+{
+    yy = 5;
+    console.log(xx+yy);
 
-
-
-
+}
+function func2()
+{
+    let zz = 10;    
+    console.log(xx+yy+zz);
+}
+func1();
+func2();

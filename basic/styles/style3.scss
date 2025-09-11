@@ -1,0 +1,37 @@
+$color_red:red;
+$color_blue:blue;
+$color_yellow:yellow;
+$color_orange:orange;
+$color_green:green;
+@mixin slide_wh_pc
+{
+    width: 800px;
+    height: 350px;
+}
+@mixin border_pc
+{
+    border-width: 1px;
+    border-style: solid;    
+}
+@mixin flex_row
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#slide_container{
+    background: #eee;
+    width: 800px; overflow: hidden;
+    .slide_wrap{        
+        @include flex_row();
+        width: calc(800px * 2);
+        transform: translateX(-800px);
+        .slide{
+            @include slide_wh_pc();
+            @include border_pc();
+        }
+        .slide1{border-color: $color_orange;}
+        .slide2{border-color: $color_green;}
+    }
+}

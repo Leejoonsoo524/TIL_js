@@ -1,0 +1,23 @@
+$main-color: #ffffd4;
+$font-medium:500;
+$font-semi:600;
+$font-bold:700;
+$font-title:3rem;
+$font-sub:1.5rem;
+
+@mixin pc_size()
+{
+    width: 1360px;
+    height: 750px;     
+    margin: 50px auto 0;
+    padding: 60px;
+}
+
+@mixin slide_btn(){
+    display: inline-block;
+    width: 250px; line-height: 60px;
+    text-align: center;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}

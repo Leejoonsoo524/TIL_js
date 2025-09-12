@@ -1,0 +1,54 @@
+#mainslide {
+  /************************************************/
+  border: 2px solid black;
+  background-color: #ffffd4;
+}
+#mainslide .slide_container {
+  border: 2px solid red;
+  width: 1360px;
+  height: 750px;
+  margin: 50px auto 0;
+  padding: 60px;
+}
+#mainslide .slide_container .slide1 {
+  background-image: url(../images/home_chun_yellow_250813.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#mainslide .slide_container .slide1 .title_contents h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+#mainslide .slide_container .slide1 .title_contents p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#mainslide .slide_container .slide1 .bnr_link .education_btn {
+  display: inline-block;
+  width: 250px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #000;
+  color: #fff;
+}
+#mainslide .slide_container .slide1 .bnr_link .news_btn {
+  display: inline-block;
+  width: 250px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 1px solid #000;
+}
+#mainslide {
+  /************************************************/
+}
+
+/*# sourceMappingURL=main.css.map */

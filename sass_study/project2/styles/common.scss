@@ -7,10 +7,11 @@ $font-sub:1.5rem;
 
 @mixin pc_size()
 {
-    width: 1360px;
-    height: 750px;     
-    margin: 50px auto 0;
-    padding: 60px;
+    max-width:1360px;
+    min-width:320px;
+    height:750px;
+    margin:50px auto 0;
+    padding:60px;    
 }
 
 @mixin slide_btn(){

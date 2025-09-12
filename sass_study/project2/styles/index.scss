@@ -3,10 +3,12 @@
 #mainslide{    
     /************************************************/
     border: 2px solid black;
+    @include pc_size;        
+
     background-color:$main-color; 
     .slide_container {
         border: 2px solid red;
-        @include pc_size;        
+        height: 100%;
         .slide{}
         .slide1 {
             background-image: url(../images/home_chun_yellow_250813.png);

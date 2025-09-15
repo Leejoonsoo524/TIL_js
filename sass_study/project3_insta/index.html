@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="./scripts/index.js" defer></script>
+    <style>
+        main {position: relative;}
+        #popup {
+            position: absolute;
+            top: 50%;left: 50%; 
+            transform: translate(-50%,-50%); 
+            scale: 0.3;
+            opacity: 0;
+        }
+        #popup svg {
+            fill: #fff;
+            stroke: #f5f5f5;
+            stroke-width: 10px;            
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- 팝업 -->
+        <div id="popup">
+            <svg width="322" height="313" viewBox="0 0 322 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M196.667 312.596V276.038C223.417 268.31 244.965 253.449 261.313 231.454C277.66 209.46 285.833 184.493 285.833 156.554C285.833 128.615 277.66 103.649 261.313 81.6543C244.965 59.6598 223.417 44.7987 196.667 37.0709V0.512604C233.522 8.83483 263.542 27.4855 286.725 56.4647C309.908 85.4439 321.5 118.807 321.5 156.554C321.5 194.301 309.908 227.665 286.725 256.644C263.542 285.623 233.522 304.274 196.667 312.596ZM0.5 210.5V103.5H71.8333L161 14.3334V299.667L71.8333 210.5H0.5ZM196.667 228.333V84.7751C210.636 91.314 221.559 101.122 229.435 114.2C237.312 127.278 241.25 141.545 241.25 157C241.25 172.158 237.312 186.202 229.435 199.131C221.559 212.061 210.636 221.795 196.667 228.333ZM125.333 100.825L86.9917 139.167H36.1667V174.833H86.9917L125.333 213.175V100.825Z" />
+                </svg>
+                
+        </div>
+        <!-- 고정 -->
+        <div id="header">
+            <a href="#" class="profile">
+                <span class="photo"></span>
+                <span class="name">username</span>
+            </a>                
+            <a href="#" class="more">더보기</a>
+        </div>
+
+        <div id="bg">
+            <span><img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="bg" alt="배경"></span>
+        </div>
+
+        <div id="btn">
+            <div class="psuh_btn">
+                <a href="#"><img src="./images/icons/like_off.png" alt="좋아요"></a>
+                <a href="#"><img src="./images/icons/comment_off.png" alt="댓글"></a>
+                <a href="#"><img src="./images/icons/paper_off.png" alt="공유"></a>
+            </div>
+            <a type="button" class="scrap">스크랩</a>
+        </div>            
+
+        <div id="comment">          
+            <p class="like">100 like</p>
+            <p class="user">username</p>
+            <p class="view">view all 0 comments</p>
+            <p class="date">3 Days Ago</p>  
+        </div>           
+    </main>
+</body>
+</html>

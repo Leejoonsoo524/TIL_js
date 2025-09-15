@@ -1,0 +1,70 @@
+@use './common.scss' as *;
+@use './index.scss';
+
+body{
+    background-color: $color_sky;
+    main{
+        @include display();
+        background-color: $color_white;
+        #header{
+            @include flex-row; 
+            justify-content: space-between;
+            height: 50px;
+            @include padding_x15;           
+
+            align-items: center;
+                .profile{
+                    @include flex-row;
+                    .photo{                    
+                        display: block;
+                        width: 20px;height: 20px;
+                        background-color: $color_gray;
+                        border-radius: 50%;
+                    }
+                    .name{}
+                }
+                .more{}
+        }
+
+        #bg{
+            span{
+                img{width: 100%; height: 460px;}
+            }
+        }
+
+        #btn{
+            @include flex-row; 
+            justify-content: space-between;
+            padding: 5px 15px;  
+            .psuh_btn{        
+                a{                
+                    img{          
+                        width: 20px;height: 20px;
+                    }
+                }
+            }
+            .scrap{}
+        }
+        #comment{
+            @include padding_x15;     
+            
+            .like{
+                @include padding_b;
+                font-size: $font_small;    
+            }
+            .user{
+                @include padding_b;
+                font-size: $font_small;
+            }
+            .view{
+                @include padding_b;
+                color: $color_gray;
+                font-size: $font_small;
+            }
+            .date{
+                @include padding_b;
+                font-size: $font_small;
+            }
+        }
+    }
+}

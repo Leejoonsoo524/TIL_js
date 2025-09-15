@@ -1,0 +1,70 @@
+body {
+  background-color: lightblue;
+}
+body main {
+  width: 420px;
+  height: 640px;
+  margin: 50px auto;
+  background-color: white;
+}
+body main #header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 15px;
+  align-items: center;
+}
+body main #header .profile {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body main #header .profile .photo {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+}
+body main #bg span img {
+  width: 100%;
+  height: 460px;
+}
+body main #btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+body main #btn .psuh_btn a img {
+  width: 20px;
+  height: 20px;
+}
+body main #comment {
+  padding: 0 15px;
+}
+body main #comment .like {
+  padding-bottom: 5px;
+  font-size: 0.835rem;
+}
+body main #comment .user {
+  padding-bottom: 5px;
+  font-size: 0.835rem;
+}
+body main #comment .view {
+  padding-bottom: 5px;
+  color: gray;
+  font-size: 0.835rem;
+}
+body main #comment .date {
+  padding-bottom: 5px;
+  font-size: 0.835rem;
+}
+
+/*# sourceMappingURL=main.css.map */

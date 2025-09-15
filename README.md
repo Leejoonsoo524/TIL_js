@@ -93,7 +93,7 @@ let info = {name:'가을'}
 * `객체.unshift()`: 배열의 시작 위치에 값 추가
 * `객체.shift()`  : 배열의 시작 위치에서 값 1개 제거
 
-
+* $ sass --watch sass_study/project3_insta/style/main.scss:sass_study/project3_insta/style/main.css
 
 <!-- 테스트 -->
 

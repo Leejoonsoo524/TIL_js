@@ -1,0 +1,5 @@
+// main.scss
+// 외부 scss 적용 순서대로 @use 연결
+@use './common.scss' as*;
+@use './index.scss' ;
+@use './responsive.scss';

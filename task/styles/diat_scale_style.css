@@ -1,0 +1,76 @@
+body 
+{
+    display: flex;  
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    background-image: url("https://cdn.pharmnews.com/news/photo/202106/105171_56447_3013.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#userinfo { width: 400px; }
+
+#userinfo .content 
+{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #eee; 
+    padding: 20px;
+}
+
+
+#userinfo .weight_group,
+#userinfo .height_group 
+{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 15px;
+}
+
+
+#userinfo label 
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+#userinfo input[type="number"] 
+{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px;
+}
+
+
+#userinfo .result_btn 
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #eee; 
+    padding: 20px;  
+}
+
+#userinfo #result 
+{
+    width: 200px;
+    background-color: green; 
+    color: white;  
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#userinfo #result:hover {background-color: #45a049;}
+
+#userinfo #normal,
+#userinfo #over 
+{
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}

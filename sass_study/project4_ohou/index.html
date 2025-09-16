@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/4cS8aXSShTIbDAxCZmPAzea6jpsnV2rwAlDtIz72N0o7ecyWzN7mOtEaCUoLVvj5kkk" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <script src="./scripts/index.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#">커뮤니티</a>
+            <a href="#">쇼핑</a>
+            <a href="#">인테리어/생활</a>
+        </header>
+
+        <main>
+            <div class="path">
+                <span>반려동물 > 강아지 > 강아지패션 > 패딩 아우터</span>
+            </div>
+
+            <div class="container">
+                <div class="overview_img">
+                    <div class="thumnail">
+                        <a href="#"><img src="./images/small1.jpg" alt=""></a>
+                        <a href="#"><img src="./images/small2.jpg" alt=""></a>
+                    </div>
+                    <div class="overview">
+                        <img src="./images/big1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <!-- 정보 -->
+                    <div class="info">
+                        <div class="brand"><a href="#">울리</a></div>
+                        <div class="product_info">
+                            <h1>몽셸 패딩 하네스 올인원 6size 3colors</h1>
+                            <div class="right_icon">
+                                <button type="button" class="bookmark">
+                                    <!-- svg -->
+                                    <span>876</span>
+                                </button>
+                                <button type="button" class="share">
+                                    <!-- svg -->                                    
+                                </button>                                
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <!-- 리뷰 -->
+                    <div id="review">
+                        <a href="#" class="review">
+                            <div class="score">
+                                    <!-- svg -->                                    
+                            </div>
+                            <p class="num">169개 리뷰</p>
+                        </a>
+                    </div>
+
+                    <!-- 할인 전 정상 가격 -->
+                    <div class="price">
+                        <em>28%</em>
+                        <del> 
+                            <span>55,900원</span>                        
+                        </del>                    
+                        <span class="info">
+                            <a href="#"><img src="" alt="정보열기">
+                            <span>
+                                상품 등록일을 기준으로 판매자가 제공하는 권장소비자 가격 <br>
+                                (도서등인 경우 정가) 또는 기타 온라인 채널 판매 가격 <br>
+                                등으로, 할인 기준이 되는 가격입니다.
+                            </span>
+                            </a>
+                        </span>
+                    <!-- 할인 후 판매 가격 -->
+                        <span>39,900 <em>원</em></span>                    
+                        <img src="./images/today.png" alt="오늘출발">
+                    </div>
+
+                    <!-- 혜택 -->
+                    <dl class="benefit_ship">
+                        <dt></dt>
+                        <dd></dd>
+                        <dt></dt>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+
+                        <dt>혜택</dt>
+                        <dd><strong>40P</strong>적립 (WELCOME 0.1% 적립)</dd>                    
+                                        
+                        <dt>배송</dt>
+                        <dd><em>무료배송</em></dd>
+                        <dd>12:00까지 결제시 오늘 출발</dd>                        
+                        <dd>일반택배</dd>
+                        <dd>제주도/도서산간 지역 8,000원</dd>
+                        <dd class="ship_info">1/15(수)도착예정 <em>83%</em> </dd>
+                    </dl>
+                    <!--  -->
+                    <form action="#" method="get" id="orderFrm">
+                        <div class="product_opt">
+                            <select name="color_select" id="color_select">
+                                <option value="none">색상</option>
+                                <option value="black">블랙</option>
+                                <option value="rasberry">라즈베리</option>
+                                <option value="amond">아몬드</option>
+                            </select>
+                            <select name="size_select" id="size_select">
+                                <option value="">사이즈</option>
+                                <option value="s">S</option>
+                                <option value="sm">SM</option>
+                                <option value="m">M</option>
+                            </select>
+                        </div>
+                        <!--  -->
+                        <div class="order_list">
+                            <span class="color_order">색상: <em>?</em></span>
+                            <span class="size_order">사이즈: <em>?</em></span>
+                            <button type="button" id="minus">-</button>
+                            <input type="text" name="num" id="num" value="1">
+                            <button type="button" id="plus">+</button>                            
+                            <span class="price"><em>0</em>원</span>
+
+                        </div>
+                        <div class="order_price">
+                            <h2>주문금액</h2>
+                            <p class="price"><em>0</em>원</p>
+                        </div>
+                        <div class="order_btn">
+                            <button type="button" id="cart_btn">장바구니</button>
+                            <button type="button" id="buy_btn">바로구매</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

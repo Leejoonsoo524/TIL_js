@@ -1,0 +1,33 @@
+$font-size-xl:2rem;
+$font-size-l:;
+$font-size-m:;
+$font-size-s:;
+$font-size-xs:;
+/**************************/
+$color-point:#0aa5ff;
+$color-black:#000;
+$color-white:#fff;
+$color-gray-light-lv1:#828c94;
+$color-gray-light-lv2:#bdbdbd;
+$color-gray-light-lv3:#dadce0;
+$color-gray-dark:#292929;
+$color-gray-medium:#757575;
+/**************************/
+@mixin content-w{max-width:1156px; min-width: 320px; margin: 0 auto;}
+@mixin flex-row{
+    display: flex;  
+    justify-content: center; 
+    align-items: center;     
+    flex-flow: row nowrap;
+}
+@mixin flex-col{
+    display: flex;  
+    justify-content: center; 
+    align-items: center;     
+    flex-flow: column nowrap;
+}
+@mixin grid-row{}
+@mixin grid-clo{}
+@mixin icon24{width: 24px; height: 24px;}
+@mixin icon20{width: 20px; height: 20px;}
+@mixin cart_buy_btn{}

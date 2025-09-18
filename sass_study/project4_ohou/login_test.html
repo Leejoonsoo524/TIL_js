@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+</head>
+<body>
+    <button type="button" id="loginBtn">로그인</button>
+    <button type="button" id="logoutBtn">로그아웃</button>
+    <p class="result"></p>
+    <script>
+        // 내부 스크립트
+        // 1.초기상태 로그아웃
+        localStorage.setItem('isLogin', 'false')
+
+        const loginBtn = document.querySelector('#loginBtn')
+        const logoutBtn = document.querySelector('#logoutBtn')
+        const resultP = document.querySelector('.result')
+        console.log(loginBtn,resultP);
+
+        function resultStatus(status) {
+        return function() {
+            localStorage.setItem('isLogin', status);
+            const resultSts = localStorage.getItem('isLogin');
+            if (resultSts == 'true') {
+                console.log('로그인');
+                resultP.textContent = '로그인 완료';
+            } else {
+                console.log('로그아웃');
+                resultP.textContent = '로그아웃 완료';
+            }
+        }
+    }
+
+        loginBtn.addEventListener('click',resultStatus('true'));
+        logoutBtn.addEventListener('click',resultStatus('false'));
+    </script>
+</body>
+</html>

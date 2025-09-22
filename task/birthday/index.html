@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/birthday_reset.css">
+    <link rel="stylesheet" href="./style/birthday_style.css">
+    <script src="./scripts/birthday.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- 배경 이미지 -->
+        <img src="https://blog.kakaocdn.net/dna/B8amT/btsOSDHWaEa/AAAAAAAAAAAAAAAAAAAAAI3Gb24b-_83XgVbjDCfASSx6PRk3rUYST_mj9hC1o8u/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=FUekvPic5JREdmwrA%2BkzIEcm2LI%3D" alt="튤립 이미지" id="flower-img">
+
+        <!-- 날짜 입력 -->
+        <div class="date-input">
+            <input type="number" name="year" id="year" placeholder="2000"> 
+            <span>년</span>
+            <input type="number" name="month" id="month" placeholder="6"> 
+            <span>월</span>
+            <input type="number" name="day" id="day" placeholder="1"> 
+            <span>일</span>
+        </div>
+
+        <!-- 버튼 -->
+        <button type="button" class="check-btn">탄생화와 꽃말은?</button>
+
+        <!-- 결과 텍스트 -->
+        <div class="result">
+            <p class="mean">6월의 탄생화는 백합, 꽃말은 순결입니다.</p>
+        </div>
+    </div>
+</body>
+</html>

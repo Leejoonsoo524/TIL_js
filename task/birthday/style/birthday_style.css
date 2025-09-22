@@ -1,0 +1,57 @@
+    /* 전체 컨테이너 */
+    #container {
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;    
+    border-radius: 12px;
+    overflow: hidden;    
+    background: #fff;
+    }
+
+    /* 배경 이미지 */
+    #flower-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    /* 날짜 입력 박스 */
+    .date-input {
+    margin: 15px 0;
+    font-size: 16px;
+    }
+
+    .date-input input {
+    width: 70px;
+    padding: 5px 0px;    
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    }   
+
+    /* 버튼 스타일 */
+    .check-btn {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 15px;
+    border-radius: 8px;    
+    margin-top: 10px;    
+    }    
+
+    /* 결과 텍스트 */
+    .result {
+    margin: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    }
+
+    .result .mean {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    }

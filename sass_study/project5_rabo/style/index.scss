@@ -1,0 +1,199 @@
+@use './common.scss' as *;
+// 상품 상세 페이지 전체
+.product-page {
+    display: flex; // 기본 레이아웃
+    gap: 20px;  
+    width: 460px;
+    // 좌측 이미지 영역
+    .product-images 
+    {
+        .thumbnail-list 
+        {
+            @include flex_col;            
+            gap: 10px;
+            img 
+            {
+                width: 60px;
+                height: 60px;          
+            }
+        }
+    }
+    // 메인 이미지
+    .main-image
+    {
+        img 
+        {
+            width: 640px;
+            height: auto;
+        }
+    }
+
+    // 우측 상품 정보 영역
+    .product-info {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;  
+    // 리뷰 및 평점
+    .review 
+    {
+        display: flex;
+        align-items: center;
+        gap: 5px;  
+        .star { fill: green; }
+        span { font-weight: bold; }  
+        a 
+        {
+            color: #555;
+            text-decoration: underline;
+        }
+    }
+    
+    // 상품명
+    .info 
+    {
+        h1
+        {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.333;
+            letter-spacing: -0.025rem;
+        }
+        p { color: gray}
+    }
+
+    // 가격
+    .price {
+        @include flex_col;        
+        align-items: flex-start;
+        gap: 4px;
+        
+        .price-info {
+            @include flex_row;        
+            align-items: baseline; // 숫자 기준선 맞추기
+            gap: 8px;
+        
+            .sale-price {
+            font-size: 30px;
+            font-weight: bold;
+            color: green;
+            }
+        
+            .original-price {
+            font-size: 18px;
+                del{color: lightgray;}            
+            }
+        }
+        
+        .benefit-info {
+            .benefit 
+            {
+                color: gray;        
+                em 
+                {
+                    font-size: 18px;
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+        
+            .delivery 
+            {
+                display: block;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+    }
+
+
+    // 수량 선택
+    .quantity 
+    {        
+        @include flex_row;        
+        justify-content: space-between;        
+        gap: 5px;
+        .countBlock{
+            border: 1px solid black;        
+            label {            
+                font-weight: bold;
+            }
+
+            button {
+                
+                width: 30px;
+                height: 30px;
+            }
+            input {
+                
+                width: 50px;
+                text-align: center;
+            }
+        }
+    }
+
+    // 총 상품 금액
+    .total-price 
+    {
+        @include flex_row;        
+        justify-content: space-between;                
+        font-size: 16px;
+        .price{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: baseline; // 숫자 기준선 맞추기
+            strong {
+                font-size: 30px;
+                font-weight: bold;
+                color: green;
+                margin-left: 5px;
+            }
+            span {
+                color: #666;
+            }
+        }
+    }
+
+    // 버튼 영역
+    .buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;        
+
+        button {
+            flex-flow: row nowrap;            
+            border-radius: 5px;
+            font-weight: bold;
+            &:nth-child(1) 
+            {
+                width: 191px; height: 53px;
+                background: #fff;
+                border: 1px solid green;
+                color: green;
+            }
+            &:nth-child(2) 
+            {
+                width: 191px; height: 53px;
+                background: green;
+                color: #fff;
+            }
+            &:nth-child(3) 
+            {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 53px; height: 53px;
+                background: red;
+                color: #fff;
+                svg
+                {
+                    width: 20px;           
+                    height: 20px;
+                    fill: white;
+                }
+                
+            }
+        }
+    }
+}
+}

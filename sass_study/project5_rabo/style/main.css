@@ -1,0 +1,173 @@
+.product-page {
+  display: flex;
+  gap: 20px;
+  width: 460px;
+}
+.product-page .product-images .thumbnail-list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.product-page .product-images .thumbnail-list img {
+  width: 60px;
+  height: 60px;
+}
+.product-page .main-image img {
+  width: 640px;
+  height: auto;
+}
+.product-page .product-info {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+.product-page .product-info .review {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.product-page .product-info .review .star {
+  fill: green;
+}
+.product-page .product-info .review span {
+  font-weight: bold;
+}
+.product-page .product-info .review a {
+  color: #555;
+  text-decoration: underline;
+}
+.product-page .product-info .info h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.333;
+  letter-spacing: -0.025rem;
+}
+.product-page .product-info .info p {
+  color: gray;
+}
+.product-page .product-info .price {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+.product-page .product-info .price .price-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+}
+.product-page .product-info .price .price-info .sale-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+.product-page .product-info .price .price-info .original-price {
+  font-size: 18px;
+}
+.product-page .product-info .price .price-info .original-price del {
+  color: lightgray;
+}
+.product-page .product-info .price .benefit-info .benefit {
+  color: gray;
+}
+.product-page .product-info .price .benefit-info .benefit em {
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+.product-page .product-info .price .benefit-info .delivery {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+.product-page .product-info .quantity {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.product-page .product-info .quantity .countBlock {
+  border: 1px solid black;
+}
+.product-page .product-info .quantity .countBlock label {
+  font-weight: bold;
+}
+.product-page .product-info .quantity .countBlock button {
+  width: 30px;
+  height: 30px;
+}
+.product-page .product-info .quantity .countBlock input {
+  width: 50px;
+  text-align: center;
+}
+.product-page .product-info .total-price {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.product-page .product-info .total-price .price {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+.product-page .product-info .total-price .price strong {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  margin-left: 5px;
+}
+.product-page .product-info .total-price .price span {
+  color: #666;
+}
+.product-page .product-info .buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.product-page .product-info .buttons button {
+  flex-flow: row nowrap;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.product-page .product-info .buttons button:nth-child(1) {
+  width: 191px;
+  height: 53px;
+  background: #fff;
+  border: 1px solid green;
+  color: green;
+}
+.product-page .product-info .buttons button:nth-child(2) {
+  width: 191px;
+  height: 53px;
+  background: green;
+  color: #fff;
+}
+.product-page .product-info .buttons button:nth-child(3) {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  background: red;
+  color: #fff;
+}
+.product-page .product-info .buttons button:nth-child(3) svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,14 @@
+const year = document.querySelector('#year');
+const month = document.querySelector('#month');
+const day = document.querySelector('#day');
+const btn = document.querySelector('.check-btn');
+const mean = document.querySelector('.mean');
+const mainImg = document.querySelector('#flower-img');
 const birthday_flower = [
     {
         month:1,
         flower:'수선화',
-        content:'자기애, 자존심, 외로움',
+        content:'자기애, 자존심, 외로움',        
     },
     {
         month:2,
@@ -60,3 +66,16 @@ const birthday_flower = [
         content:'축하, 감사'
     }
 ]
+
+function birthday(){
+    let monIn = Number(month.value);
+    if((monIn == 0) ||(monIn > birthday_flower.length))
+    {
+        alert('입력 값을 확인하세요');
+        mean.textContent = '생일을 잘못 입력 하셨습니다.'
+    }
+    mean.textContent = `${monIn}월의 탄생화는 ${birthday_flower[monIn - 1].flower}, 꽃말은 ${birthday_flower[monIn - 1].content}입니다`;
+    month.value = '';
+}
+
+btn.addEventListener('click',birthday);

@@ -28,7 +28,21 @@
         <p class="select">선택옵션 : <span></span><button type="button" class="close">x</button></p>
     </div>
     <script>
-        
+        const $color = $('#color');
+        const $select = $('.select');
+        const $btn = $('.close');
+
+        $select.hide();
+
+        $color.change(function(){
+            $select.show();
+            let thisVal = $(this).find('option:checked').val();
+            $select.find('span').text(thisVal);
+        })
+
+        $btn.click(function(){
+            $(this).parent().hide();
+        })
     </script>
 </body>
 </html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+        #s1{}
+        #s1 #main_bnr{width: 800px;}
+        #s1 #main_bnr .swiper-wrapper{}
+        #s1 #main_bnr .swiper-wrapper .swiper-slide{filter: grayscale(100%); opacity: 0.5;}
+        #s1 #main_bnr .swiper-wrapper .swiper-slide-active{filter: grayscale(0%);opacity: 1;}
+        #s1 #main_bnr .swiper-wrapper .swiper-slide img{width: 100%;}
+        #s1 #main_bnr .swiper-wrapper .bnr1{}
+        #s1 #main_bnr .swiper-wrapper .bnr2{}
+        #s1 #main_bnr .swiper-wrapper .bnr3{}
+        #s1 #main_bnr .swiper-wrapper .bnr4{}
+        #s1 #main_bnr .swiper-wrapper .bnr5{}
+        #s1 #main_bnr .swiper-wrapper .bnr6{}
+
+
+        #idus{width: 1280px; position: relative; margin: 0 auto;}
+        #idus #idus_bnr{}
+        #idus #idus_bnr .swiper-wrapper{}
+        #idus #idus_bnr .swiper-wrapper .swiper-slide{filter: grayscale(50%); opacity: 0.5;border-radius: 20px;  overflow: hidden;}
+        #idus #idus_bnr .swiper-wrapper .swiper-slide-active{filter: grayscale(0%);opacity: 1;}
+        #idus #idus_bnr .swiper-wrapper .swiper-slide img{width: 100%;}
+        
+        #idus_bnr .controls{
+            border: 1px solid red;
+            width: 845px;
+            height: 423px;
+            position: absolute;
+            z-index: 90;
+            left: 50%;
+            transform: translateX(-50%);
+            top:0;            
+        }
+        #idus_bnr .controls .swiper-pagination {
+            position: absolute;
+            left: auto;
+            top: auto;
+            right: 20px;
+            bottom: 20px;
+            width: max-content;
+        }
+
+        #responsive{margin: 100px auto;}
+        #responsive #respon{max-width: 1200px; height: 150px;}
+        #responsive #respon .swiper-wrapper{}
+        #responsive #respon .swiper-wrapper .swiper-slide{}
+        #responsive #respon .swiper-wrapper .s1{background: yellow;}
+        #responsive #respon .swiper-wrapper .s2{background: coral;}
+        #responsive #respon .swiper-wrapper .s3{background: lightblue;}
+        #responsive #respon .swiper-wrapper .s4{background: aqua;}
+
+
+        /* 네이버 섹션 */
+        #naver {
+            margin: 100px 0;
+            max-width: 100%;                
+            overflow: hidden;
+        }
+
+        #naverWrap {
+            overflow: visible;
+            position: relative;
+            max-width: 1200px;        
+            min-width: 320px;        
+        }
+
+        #naver .swiper-wrapper {}
+        #naver .swiper-slide {}
+        #naver .swiper-slide a {}
+        #naver .swiper-slide img {
+            width: 100%;
+        }
+
+        #naver .swiper-slide .txt {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            color: #fff;
+            transform: translateY(-50%);            
+        }
+
+        #naver .swiper-slide .txt h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #naver .swiper-slide .txt p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+        
+        
+        
+        #naver .controls {
+            max-width: 1200px; margin: 20px auto 0; position: relative;
+            display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+        }
+        #naver .controls .swiper-scrollbar {width: 90%; position: relative; height: 2px;}
+        #naver .controls .swiper-scrollbar-drag {background: #000;}
+
+        #naver .controls .btn{position: relative; width: 80px; height: 30px;} 
+
+        #naver .controls .btn .swiper-button-prev,
+        #naver .controls .btn .swiper-button-next {transform: scale(0.4); color: #000;}
+                
+        #naver .controls #play_stop_btn {width: 18px;}
+        #naver .controls #play_stop_btn img{width: 100%;}
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <section id="idus">
+        <div class="swiper" id="idus_bnr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bnr1" ><img src="./images/idus/img1.jpg" alt=""></div>
+                <div class="swiper-slide bnr2" ><img src="./images/idus/img2.jpg" alt=""></div>
+                <div class="swiper-slide bnr3" ><img src="./images/idus/img3.jpg" alt=""></div>
+                <div class="swiper-slide bnr4" ><img src="./images/idus/img4.png" alt=""></div>
+                <div class="swiper-slide bnr5" ><img src="./images/idus/img5.jpg" alt=""></div>
+                <div class="swiper-slide bnr6" ><img src="./images/idus/img6.jpg" alt=""></div>
+                <div class="swiper-slide bnr7" ><img src="./images/idus/img7.jpg" alt=""></div>
+                <div class="swiper-slide bnr8" ><img src="./images/idus/img8.png" alt=""></div>
+                <div class="swiper-slide bnr9" ><img src="./images/idus/img9.jpg" alt=""></div>                
+                <div class="swiper-slide bnr10" ><img src="./images/idus/img10.png" alt=""></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>                
+            <div class="controls">
+                    <div class="swiper-pagination"></div>         
+            </div>
+        </div>
+    </section>
+
+    <section id="s1">
+        <div class="swiper" id="main_bnr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bnr1" ><img src="./images/gentile_monster_img_set6/gentile_01.jpg" alt=""></div>
+                <div class="swiper-slide bnr2" ><img src="./images/gentile_monster_img_set6/gentile_02.jpg" alt=""></div>
+                <div class="swiper-slide bnr3" ><img src="./images/gentile_monster_img_set6/gentile_03.jpg" alt=""></div>
+                <div class="swiper-slide bnr4" ><img src="./images/gentile_monster_img_set6/gentile_04.jpg" alt=""></div>
+                <div class="swiper-slide bnr5" ><img src="./images/gentile_monster_img_set6/gentile_05.jpg" alt=""></div>
+                <div class="swiper-slide bnr6" ><img src="./images/gentile_monster_img_set6/gentile_06.jpg" alt=""></div>                
+        </div>
+    </section>    
+
+
+    <!-- 반응형 swiper -->
+    <section id="responsive">
+        <div class="swiper" id="respon">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide s1" >1</div>
+                <div class="swiper-slide s2" >2</div>
+                <div class="swiper-slide s3" >3</div>
+                <div class="swiper-slide s4" >4</div>
+            </div>
+        </div>       
+    </section>
+
+    <section id="naver">
+        <div class="swiper" id="naverWrap">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide na1" >
+                    <a href="#">
+                        <div class="txt">
+                            <h1>특선물</h1>    
+                            <p>한가득 담은 추석선물</p>
+                        </div>
+                        <img src="./images/naver/img1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide na2" >
+                    <a href="#">
+                        <div class="txt">
+                            <h1>특선물</h1>    
+                            <p>특봤다! 선착순 10% 쿠폰</p>
+                        </div>
+                        <img src="./images/naver/img2.png" alt="">
+                    </a>                    
+                </div>
+                <div class="swiper-slide na3" >
+                    <a href="#">
+                        <div class="txt">
+                            <h1>특선물</h1>    
+                            <p>지금 담아야 특이득!</p>
+                        </div>
+                        <img src="./images/naver/img3.png" alt="">
+                    </a>                                  
+                </div>
+                <div class="swiper-slide na4" >
+                    <a href="#">
+                        <div class="txt">
+                            <h1>부모님의 첫 구매로 <br>우리 가족 1만원 적립</h1>    
+                            <p>첫 구매 가족 초대하면 5천 원씩</p>
+                        </div>
+                        <img src="./images/naver/img4.png" alt="">
+                    </a>                                         
+                </div>
+            </div>            
+        </div>    
+
+        <div class="controls">
+            <div class="swiper-scrollbar"></div>     
+                <div class="btn">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>                                                        
+                </div>   
+                <button type="button" id="play_stop_btn"><img src="https://cdn-icons-png.flaticon.com/512/7693/7693281.png" alt=""></button>
+                                                                    <!-- https://cdn-icons-png.flaticon.com/128/0/375.png -->
+        </div>        
+    </section>
+
+    <script>
+        const mainBar = new Swiper('#main_bnr',{
+            autoplay: {delay:2000},
+            loop: true,
+            // 한 화면 기준 보이는 슬라이드 개수 옵션
+            slidesPerView: 2.5,
+            // 슬라이드 사이 여백(slidesPerView: 2개 이상인 경우)
+            spaceBetween:10, //px 내장
+            centeredSlides:true,
+        })
+
+        const idusBar = new Swiper('#idus_bnr',{
+            autoplay: {delay:2000},
+            loop: true,
+            // 한 화면 기준 보이는 슬라이드 개수 옵션
+            slidesPerView: 1.5,
+            // 슬라이드 사이 여백(slidesPerView: 2개 이상인 경우)
+            spaceBetween:20, //px 내장
+            centeredSlides:true,
+
+            pagination:{
+                el:'.controls .swiper-pagination',                
+                type : "fraction",
+            },
+            
+        })
+
+        const resonBnr = new Swiper('#respon',{
+            slidesPerView: 1, /* 반응형 설정 값(이하) */
+            breakpoints:{/* 반응형 설정 시작(개수, 간격) */
+                640:{//640이상일때 보이겠다.
+                    slidesPerView: 2,
+                    spaceBetween:10,
+                },
+                1024:{//1024이상일때 보이겠다.
+                    slidesPerView: 3,
+                    spaceBetween:20,
+                },
+            },
+
+        })
+
+        const naverBnr = new Swiper('#naverWrap',{
+            autoplay:{delay:3000},
+            loop:true,
+            slidesPerView: 1,
+            initialSlide:1,
+            breakpoints:{/* 반응형 설정 시작(개수, 간격) */
+                860:{//640이상일때 보이겠다.
+                    slidesPerView: 2.3,
+                    spaceBetween:20,
+                    centeredSlides:true,
+                },
+                1024:{//1024이상일때 보이겠다.
+                    slidesPerView: 2,
+                    spaceBetween:20,
+                    centeredSlides:false,
+                },
+            },
+            scrollbar:{
+                el: '.controls .swiper-scrollbar',                
+            },
+            navigation:{
+                nextEl:'.controls .swiper-button-next',
+                prevEl:'.controls .swiper-button-prev',
+            },
+        })
+
+        /* 네이버 정지 재생 제어 */
+        const playBtn = document.querySelector('#naver #play_stop_btn');
+        let playindex = true;
+        console.log(playBtn);
+
+        playBtn.addEventListener('click',()=>{
+            playindex = !playindex;
+            console.log(playindex);
+
+            playindex ? playBtn.children[0].src = 'https://cdn-icons-png.flaticon.com/512/7693/7693281.png' :
+                        playBtn.children[0].src = 'https:cdn-icons-png.flaticon.com/128/0/375.png' ;
+            playindex ? naverBnr.autoplay.start() : naverBnr.autoplay.stop();
+        });
+    </script>
+</body>
+</html>

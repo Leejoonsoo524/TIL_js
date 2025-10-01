@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        body,html{
+            height: 300vh;
+            background: linear-gradient(beige,coral,red,blue);
+        }
+        #top{position: fixed;right: 20px; bottom: 20px; display: none;}
+        .bnr {background: hotpink; height: 50px;}
+        header{position: relative; z-index: 999; background: #fff; height: 100px;}
+        .header_fixed {position: fixed; top: 0; width: 100%;}
+        main .title{position: sticky; top: 0; background: skyblue; height: 50px;}
+        /* sticky 실행조건 : sticky적용 대상의 부모가 뷰포트보다 커야함 */
+    </style>
+</head>
+<body>
+    <button type="button" id="top">위로</button>
+    <div class="bnr">광고</div>
+    <header>header</header>
+    <main>
+        <div class="title">
+            <a href="#">책 소개</a>
+            <a href="#">리뷰</a>
+            <a href="#">배송정보</a>
+        </div>
+        <div class="contents" style="height: 80vh">책 소개 내용</div>
+        <div class="contents" style="height: 80vh">리뷰 내용</div>
+        <div class="contents" style="height: 80vh">배송정보 내용</div>                
+    </main>
+
+    <script>
+        const topBtn = document.querySelector('#top');
+        topBtn.addEventListener('click',()=>{
+            window.scrollTo({left:0, top:0, behavior:'smooth'});
+            //window.scrollTo(x,y,option)
+            //window.scrollTo(100,200) //옵션없이 x축100 y축200 움직임(픽셀기준)
+            //window.scrollTo({left:0, top:100}) //옵션없이 왼쪽0 위로100 움직임
+            //window.scrollTo({left:0, top:100, behavior:'smooth'}) //옵션없이 왼쪽0 위로100 움직임
+                                                //동작기능: 부드럽게            
+        });
+        /*********************************************************/
+        //타이틀 클릭시 컨텐츠 위치로 스크롤 이동
+        const titleA = document.querySelectorAll('.title a');
+        const contents = document.querySelectorAll('.contents');
+
+        titleA.forEach(function(obj, idx){
+            obj.addEventListener('click',function(e){
+                e.preventDefault();                 
+                window.scrollTo({
+                    top: contents[idx].offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        /*********************************************************/        
+        //스크롤이벤트
+        //window.addEventListener('scroll',()=>{console.log('.');});
+        /* window.addEventListener('scroll',()=>{
+            console.log(window.pageYOffset);
+        }); */
+        const header = document.querySelector('header');
+        window.addEventListener('scroll',()=>{
+            /* if(window.pageYOffset > 50)  {
+                header.style.position = 'fixed';
+                header.style.top = '0';
+                header.style.width = '100%';
+            }
+            else{
+                header.style.position = 'relative'; 
+            }*/
+
+            if(window.pageYOffset > 50) {
+                header.classList.add('header_fixed');
+                topBtn.style.display = 'block';
+            }
+            else{
+                header.classList.remove('header_fixed');
+                topBtn.style.display = 'none';
+            }
+                
+        })
+
+    </script>
+</body>
+</html>

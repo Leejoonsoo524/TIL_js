@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <style>
+        body,html{
+            height: 300vh;
+            background: linear-gradient(aqua,lime,orange);
+        }
+        main .bg{height: 90vh; overflow: hidden;}
+        main .bg img{width: 100%;}
+        main .bg2 img{opacity: 0; transform: scale(1);}
+    </style>
+</head>
+<body>
+    <main>
+        <section class="bg bg1"><img src="https://i.pinimg.com/originals/a2/12/58/a21258eca14c5704bdd689b3f34f88bf.jpg" alt=""></section>
+        <section class="bg bg2"><img src="https://i.pinimg.com/736x/80/ae/89/80ae89b4bbddbb0ae975b3b77180d9d7.jpg" alt=""></section>
+        <section class="bg bg3"><img src="https://i.pinimg.com/736x/18/7e/8a/187e8ae3a0f7f7ba763c2bdae4d64d98.jpg" alt=""></section>
+        <section class="bg bg4"><img src="https://i.pinimg.com/1200x/a9/8c/0a/a98c0a907922037c64b1e57c5a2b931c.jpg" alt=""></section>
+    </main>
+    <script>
+        // DOMContentLoaded 이벤트 필요한 경우 : defer 없이 script를 head에 작성한 경우
+        /* document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger)
+            //스크롤 트리거 작성 시작
+
+            //스크롤 트리거 작성 종료
+        }); */
+
+        gsap.registerPlugin(ScrollTrigger)
+            //스크롤 트리거 작성 시작
+            //gsap.from('애니메이션대상' , {옵션:값, 옵션:값, 옵션:{옵션:값},})
+            /* gsap.from('애니메이션대상' , {
+                scrollTrigger:{trigger:'트리거발동기준'},
+                스크롤애니메이션속성:값,
+                스크롤애니메이션속성:값,
+            }) */
+
+            /* gsap.to('.bg2 img' , {
+                scrollTrigger:{
+                    trigger:'.bg2',
+                    markers:true,
+                    start:'top 80%',
+                    end:'top 40%',
+                },
+                //초기값->설정값으로
+                scale:2,
+                opacity:1,
+                duration:3,
+            }) */
+
+            gsap.from('.bg2 img' , {    
+                scrollTrigger:{
+                    trigger:'.bg2',
+                    markers:true,
+                    start:'top 80%',
+                    end:'top 40%',
+                },
+                //설정값->초기값으로
+                scale:2,
+                opacity:1,
+                duration:3,
+            })
+            //스크롤 트리거 작성 종료
+    </script>
+    
+</body>
+</html>

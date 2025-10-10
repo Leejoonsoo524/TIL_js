@@ -110,7 +110,12 @@ let info = {name:'가을'}
 * `options[index]`: select의 특정 option 확인 시 속성
 
 <!-- 테스트 -->
+    const add = (a,b)=> a + b;
+    console.log(add(2,3));
 
+    const numbers = [1,2,3,4];
+    const doubled = numbers.map(num=>num * 2)
+    console.log(doubled);
 
 
 
